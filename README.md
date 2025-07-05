@@ -12,8 +12,6 @@ This project demonstrates how small businesses might track basic SEO and custome
 - **Frontend Live:** [https://mini-local-business.vercel.app](https://mini-local-business.vercel.app)
 - **Backend Live API:** [https://mini-local-business-api.onrender.com](https://mini-local-business-api.onrender.com)
 
-> Replace the above links with your deployed URLs after hosting.
-
 ---
 
 ## Tech Stack
