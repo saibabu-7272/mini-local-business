@@ -121,8 +121,8 @@ Example Response:
 }
 ```
 Features:
-  Submit your Business Name & Location to get simulated Google ratings and SEO headline.
-  Regenerate a new AI-style SEO headline.
-  Clean, responsive interface using plain CSS.
-  Simple and easy API integration with Fetch.
+  - Submit your Business Name & Location to get simulated Google ratings and SEO headline.
+  - Regenerate a new AI-style SEO headline.
+  - Clean, responsive interface using plain CSS.
+  - Simple and easy API integration with Fetch.
 
