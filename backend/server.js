@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 const PORT = 5000;
 
-app.use(cors({ origin: '*' }));
+app.use(cors({ origin: 'https://mini-local-business.vercel.app/' }));
 app.use(express.json());
 
 // Utility function to generate random headline
