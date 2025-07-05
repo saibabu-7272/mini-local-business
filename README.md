@@ -82,10 +82,13 @@ The frontend will run on:
 Example: http://localhost:3000
 
 ## API Endpoints
+
 ###  POST /business-data
+
 Simulates fetching a business's Google rating, number of reviews, and AI-generated SEO headline.
 
-``` Example Request:
+Example Request:
+``` 
 POST http://localhost:5000/business-data
 Content-Type: application/json
 
@@ -95,7 +98,8 @@ Content-Type: application/json
 }
 
 ```
-``` Example Response:
+Example Response:
+``` 
 {
   "rating": 4.3,
   "reviews": 127,
@@ -103,11 +107,15 @@ Content-Type: application/json
 }
 ```
 ### GET /regenerate-headline?name={businessName}&location={location}
+
 Generates a new SEO headline for the given business.
-```Example Request:
+
+Example Request:
+```
 GET http://localhost:5000/regenerate-headline?name=Cake%20&%20Co&location=Mumbai
 ```
-``` Example Response:
+Example Response:
+``` 
 {
   "headline": "Discover Why Cake & Co in Mumbai is the Talk of the Town"
 }
