@@ -24,6 +24,7 @@ This project demonstrates how small businesses might track basic SEO and custome
 
 ## Project Structure
 
+```
 Mini Local Business Dashboard
 ├── frontend
 │ ├── public
@@ -36,7 +37,7 @@ Mini Local Business Dashboard
 │ ├── server.js
 │ ├── package.json
 └── README.md
-
+```
 
 ---
 
