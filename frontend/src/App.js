@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
+
 export default function App() {
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
@@ -9,9 +10,12 @@ export default function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/business-data", {
+      const res = await fetch('https://mini-local-business-api.onrender.com/business-data', {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+          "Content-Type": "application/json",
+          "Accept" : "application/json"
+        },
         body: JSON.stringify({ name, location }),
       });
       const data = await res.json();
@@ -23,7 +27,8 @@ export default function App() {
 
   const regenerateHeadline = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/regenerate-headline?name=${name}&location=${location}`);
+      
+      const res = await fetch(`https://mini-local-business-api.onrender.com/regenerate-headline?name=${name}&location=${location}`);
       const data = await res.json();
       setBusinessData({ ...businessData, headline: data.headline });
     } catch (err) {
